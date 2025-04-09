@@ -1,4 +1,4 @@
-<nav class="bg-blue-900 h-screen w-fit pl-4 pr-4 pt-2 flex flex-col justify-around">
+<nav class="bg-blue-900 h-screen w-fit pl-4 pr-4 pt-2 flex flex-col justify-around min-h-screen">
     <a class="bg-white rounded-3xl p-3 self-center" href="{{ route('dashboard') }}">
         <h2 class="font-semibold">Dashboard</h2>
     </a>

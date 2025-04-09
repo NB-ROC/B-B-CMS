@@ -13,7 +13,10 @@ class ContactController extends Controller
     public function index()
     {
         $contacts = Contact::all();
-        return view('contact.index', compact('contacts'));
+        $index = 0;
+        session(['contactIndex' => $index]);
+        $contact = $contacts[session('contactIndex')];
+        return view('contact.index', compact('contacts'), compact('contact'));
     }
 
     /**
@@ -70,5 +73,15 @@ class ContactController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function increment()
+    {
+        session(['contactIndex' => session('contactIndex') + 1]);
+        return view('contact.index');
+    }
+    public function decrement()
+    {
+        session(['contactIndex' => session('contactIndex') - 1]);
+        return view('contact.index');
     }
 }

@@ -19,5 +19,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('contact', ContactController::class);
+Route::get('/contact/increment', [ContactController::class, 'increment'])->name('contact.increment');
+Route::get('/contact/decrement', [ContactController::class, 'decrement'])->name('contact.decrement');
 
 require __DIR__.'/auth.php';

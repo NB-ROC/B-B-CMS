@@ -1474,6 +1474,33 @@
 @if (Route::has('login'))
     <div class="h-14.5 hidden lg:block"></div>
 @endif
+<div class="w-full px-4 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <img src="{{ asset('voordeur.png') }}" alt="Voordeur" class="w-full max-w-[600px] h-auto rounded shadow">
+    <div class="flex flex-col justify-center space-y-6">
+        <div>
+            <h2 class="justify-center text-4xl font-bold flex">Naam accomodatie</h2>
+            <p class="mt-4 text-gray-700">
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+        </div>
+        <button class="flex justify-center px-4 py-1.5 text-l bg-gray-800 text-white rounded hover:bg-gray-700">
+            Boeken
+        </button>
+    </div>
+</div>
+
+<div class="w-full px-4 md:px-8 py-16 grid grid-cols-2 md:grid-cols-2 gap-8">
+    <div class="flex flex-col justify-center space-y-4">
+        <h3 class="justify-center text-4xl font-bold flex">Extra info</h3>
+        <p class="text-gray-700">
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+    </div>
+    <div class="flex">
+        <img src="{{ asset('keuken.png') }}" alt="Keuken" class="ml-auto w-full max-w-[600px] h-auto rounded shadow">
+    </div>
+</div>
 <x-footer></x-footer>
 </body>
 </html>
