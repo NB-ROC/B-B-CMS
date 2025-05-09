@@ -1,17 +1,14 @@
 <nav class="bg-blue-900 h-screen w-fit pl-4 pr-4 pt-2 flex flex-col justify-around min-h-screen">
-    <a class="bg-white rounded-3xl p-3 self-center" href="{{ route('dashboard') }}">
+    <a class="bg-white rounded-3xl p-4 self-center" href="{{ route('dashboard') }}">
         <h2 class="font-semibold">Dashboard</h2>
     </a>
-    <a class="bg-white rounded-3xl p-3" href="{{ route('contact.index') }}">
+    <a class="bg-white rounded-3xl p-4 self-center" href="{{ route('contact.index') }}">
         <h2 class="font-semibold">Contact</h2>
     </a>
-    <a class="bg-white rounded-3xl p-3" href="/">
-        <h2 class="font-semibold">Account</h2>
-    </a>
-    <a class="bg-white rounded-3xl p-3" href="/">
+    <a class="bg-white rounded-3xl p-4 self-center" href="/">
         <h2 class="font-semibold">Calender</h2>
     </a>
-    <a class="bg-white rounded-3xl p-3" href="/">
+    <a class="bg-white rounded-3xl p-4 self-center" href="/">
         <h2 class="font-semibold">Media</h2>
     </a>
 </nav>
