@@ -5,12 +5,12 @@ En we maken het project met Laravel.
 
 ## Het design
 
-<p align="center"><img scr="./Readme/Design-B-B.png" width="400" alt="Design voor de B&B website"></p>
+<p align="center"><img scr="Readme/Design-B-B.png" width="400" alt="Design voor de B&B website"></p>
 
-Hierboven zie je het design wat wij hebben gemaakt voor de B&B, dit design is de basis voor de website, hierin kun je de tekst, kleuren en afbeeldingen aanpassen.
+Hierboven komt het design wat wij hebben gemaakt voor de B&B, dit design is de basis voor de website, hierin kun je de tekst, kleuren en afbeeldingen aanpassen.
 
 ## CMS design
 
 <p align="center"><img scr="./Readme/Design-CMS.png" width="400" alt="Design voor het CMS"></p>
 
-Hierboven zie je het design wat wij hebben gemaakt voor het CMS systeem, hierin kun je dus alles aanpassen zoals jij dat zou willen.
+Hierboven komt het design wat wij hebben gemaakt voor het CMS systeem, hierin kun je dus alles aanpassen zoals jij dat zou willen.
