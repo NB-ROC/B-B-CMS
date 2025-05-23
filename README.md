@@ -11,6 +11,8 @@ Hierboven komt het design wat wij hebben gemaakt voor de B&B, dit design is de b
 
 ## CMS design
 
-<p align="center"><img scr="./Readme/Design-CMS.png" width="400" alt="Design voor het CMS"></p>
+<p align="center">
+  <img src="./Readme/Design-CMS.png" width="400" alt="Design voor het CMS">
+</p>
 
 Hierboven komt het design wat wij hebben gemaakt voor het CMS systeem, hierin kun je dus alles aanpassen zoals jij dat zou willen.
