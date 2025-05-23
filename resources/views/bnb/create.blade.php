@@ -1470,9 +1470,25 @@
     @endif
 </head>
 <body class=" text-[#1b1b18]">
-<div class="flex flex-col m-72 bg-blue-400 items-center rounded-3xl">
-    <h2 class="text-white text-2xl font-bold mb-2">De B&B is nog niet gemaakt</h2>
-    <a href="{{ route('bnb.create') }}" class="bg-white text-black p-4 rounded-2xl mb-2">Nieuwe B&B</a>
+<div>
+    <h2 class="text-3xl font-semibold mb-4 flex justify-center">Nieuwe B&B</h2>
+
+    <form method="POST" class="space-y-3 bg-gray-300 p-6 rounded-3xl shadow-2xl max-w-md mx-auto"
+          action="{{ route('bnb.store') }}">
+        @csrf
+        <input type="text" name="name" placeholder="Naam" class="w-full p-2 border rounded-md h-15">
+        <select class="w-full" name="user_id">
+            @foreach(\App\Models\User::all() as $user)
+                <option value="{{ $user->id }}">{{ $user->name }}</option>
+            @endforeach
+        </select>
+        <select class="w-full" name="scheme_id">
+            @foreach(\App\Models\Scheme::all() as $scheme)
+                <option value="{{ $scheme->id }}">{{ $scheme->name }}</option>
+            @endforeach
+        </select>
+        <input type="submit" class="bg-gray-500 p-3 text-white py-2 rounded-md w-full cursor-pointer" value="Create">
+    </form>
 </div>
 </body>
 </html>

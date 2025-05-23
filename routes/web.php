@@ -1,12 +1,20 @@
 <?php
 
+use App\Http\Controllers\BnbController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
-    return view('welcome');
+    if (count(\App\Models\Bnb::all()) == 0)
+    {
+        return view('welcome');
+    }
+    else
+    {
+        return view('page.index');
+    }
 });
 
 Route::get('/dashboard', function () {
@@ -21,6 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('contact', ContactController::class);
+Route::resource('bnb', BnbController::class);
 Route::get('/contact/increment', [ContactController::class, 'increment'])->name('contact.increment');
 Route::get('/contact/decrement', [ContactController::class, 'decrement'])->name('contact.decrement');
 

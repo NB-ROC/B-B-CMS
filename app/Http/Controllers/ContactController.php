@@ -15,7 +15,12 @@ class ContactController extends Controller
         $contacts = Contact::all();
         $index = 0;
         session(['contactIndex' => $index]);
-        $contact = $contacts[session('contactIndex')];
+        if (count($contacts) >= 1) {
+            $contact = $contacts[session('contactIndex')];
+        }
+        else{
+            $contact = null;
+        }
         return view('contact.index', compact('contacts'), compact('contact'));
     }
 

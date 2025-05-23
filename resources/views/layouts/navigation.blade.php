@@ -6,10 +6,10 @@
         <h2 class="font-semibold">Contact</h2>
     </a>
     <a class="bg-white rounded-3xl p-4 self-center" href="/">
-        <h2 class="font-semibold">Calender</h2>
+        <h2 class="font-semibold">Pagina's</h2>
     </a>
-    <a class="bg-white rounded-3xl p-4 self-center" href="/">
-        <h2 class="font-semibold">Media</h2>
+    <a class="bg-white rounded-3xl p-4 self-center" href="{{ route('bnb.show', \App\Models\Bnb::all()->first()) }}">
+        <h2 class="font-semibold">B&B </h2>
     </a>
 </nav>
 <div class="absolute sm:flex sm:items-center sm:ms-6 top-0 right-0">

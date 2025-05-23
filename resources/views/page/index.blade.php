@@ -1222,17 +1222,17 @@
                         background-color: var(--color-white)
                     }
                 }
-            }@starting-style {
+            }@starting-style{
                 .starting\:translate-y-4 {
                     --tw-translate-y: calc(var(--spacing) * 4);
                     translate: var(--tw-translate-x) var(--tw-translate-y)
                 }
-            }@starting-style {
+            }@starting-style{
                 .starting\:translate-y-6 {
                     --tw-translate-y: calc(var(--spacing) * 6);
                     translate: var(--tw-translate-x) var(--tw-translate-y)
                 }
-            }@starting-style {
+            }@starting-style{
                 .starting\:opacity-0 {
                     opacity: 0
                 }
@@ -1470,9 +1470,37 @@
     @endif
 </head>
 <body class=" text-[#1b1b18]">
-<div class="flex flex-col m-72 bg-blue-400 items-center rounded-3xl">
-    <h2 class="text-white text-2xl font-bold mb-2">De B&B is nog niet gemaakt</h2>
-    <a href="{{ route('bnb.create') }}" class="bg-white text-black p-4 rounded-2xl mb-2">Nieuwe B&B</a>
+@include('layouts.webnavigation')
+@if (Route::has('login'))
+    <div class="h-14.5 hidden lg:block"></div>
+@endif
+<div class="w-full px-4 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <img src="{{ asset('voordeur.png') }}" alt="Voordeur" class="w-full max-w-[600px] h-auto rounded shadow">
+    <div class="flex flex-col justify-center space-y-6">
+        <div>
+            <h2 class="justify-center text-4xl font-bold flex">Naam accomodatie</h2>
+            <p class="mt-4 text-gray-700">
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+        </div>
+        <button class="flex justify-center px-4 py-1.5 text-l bg-gray-800 text-white rounded hover:bg-gray-700">
+            Boeken
+        </button>
+    </div>
 </div>
+
+<div class="w-full px-4 md:px-8 py-16 grid grid-cols-2 md:grid-cols-2 gap-8">
+    <div class="flex flex-col justify-center space-y-4">
+        <h3 class="justify-center text-4xl font-bold flex">Extra info</h3>
+        <p class="text-gray-700">
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
+    </div>
+    <div class="flex">
+        <img src="{{ asset('keuken.png') }}" alt="Keuken" class="ml-auto w-full max-w-[600px] h-auto rounded shadow">
+    </div>
+</div>
+<x-footer></x-footer>
 </body>
 </html>
