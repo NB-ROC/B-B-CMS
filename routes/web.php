@@ -13,9 +13,14 @@ Route::get('/', function () {
     }
     else
     {
-        return view('page.index');
+        if (\Illuminate\Support\Facades\Auth::user()) {
+            return view('page.index');
+        }
+        else{
+            return view('auth.register');
+        }
     }
-});
+})->name('home');
 
 Route::get('/dashboard', function () {
     $contacts = Contact::all();

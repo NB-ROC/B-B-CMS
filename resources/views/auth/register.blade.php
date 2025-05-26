@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-unauth-layout>
     <form method="POST" action="{{ route('register') }}" class="bg-black p-8 rounded-2xl justify-self-center mb-4">
         @csrf
         <h2 class="text-white text-3xl font-extrabold mb-2">Register</h2>
@@ -14,6 +14,14 @@
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <div class="mt-4">
+           <select name="bnb_id" id="bnb_id">
+               @foreach(\App\Models\Bnb::all() as $bnb)
+                   <option value="{{ $bnb->id }}">{{ $bnb->name }}</option>
+               @endforeach
+           </select>
         </div>
 
         <!-- Password -->
@@ -49,4 +57,4 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</x-unauth-layout>

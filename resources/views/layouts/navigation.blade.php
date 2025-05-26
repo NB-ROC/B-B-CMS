@@ -8,7 +8,7 @@
     <a class="bg-white rounded-3xl p-4 self-center" href="/">
         <h2 class="font-semibold">Pagina's</h2>
     </a>
-    <a class="bg-white rounded-3xl p-4 self-center" href="{{ route('bnb.show', \App\Models\Bnb::all()->first()) }}">
+    <a class="bg-white rounded-3xl p-4 self-center" href="{{ route('bnb.show', \Illuminate\Support\Facades\Auth::user()->bnb) }}">
         <h2 class="font-semibold">B&B </h2>
     </a>
 </nav>

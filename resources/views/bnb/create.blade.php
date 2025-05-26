@@ -1477,11 +1477,6 @@
           action="{{ route('bnb.store') }}">
         @csrf
         <input type="text" name="name" placeholder="Naam" class="w-full p-2 border rounded-md h-15">
-        <select class="w-full" name="user_id">
-            @foreach(\App\Models\User::all() as $user)
-                <option value="{{ $user->id }}">{{ $user->name }}</option>
-            @endforeach
-        </select>
         <select class="w-full" name="scheme_id">
             @foreach(\App\Models\Scheme::all() as $scheme)
                 <option value="{{ $scheme->id }}">{{ $scheme->name }}</option>

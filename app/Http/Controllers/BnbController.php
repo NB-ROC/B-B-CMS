@@ -32,13 +32,10 @@ class BnbController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'user_id' => 'required',
             'scheme_id' => 'required',
         ]);
         Bnb::create($request->all());
-        $user = User::where('id', $request->get('user_id'))->first();
-        Auth::login($user);
-        return redirect()->route('dashboard');
+        return redirect()->route('home');
     }
 
     /**
