@@ -1484,7 +1484,7 @@
 
             Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur. Aliquet maecenas fringilla facilisi pharetra dapibus dictumst non porta curabitur. Aliquam mi habitant nostra volutpat elit netus rutrum. Mauris tristique phasellus nulla consequat purus amet. Viverra maecenas auctor dui pulvinar ullamcorper imperdiet viverra.            </p>
         </div>
-        <button class="flex justify-center px-4 py-1.5 text-l bg-gray-800 text-white rounded hover:bg-gray-700">
+        <button class="flex justify-center px-4 py-1.5 text-l bg-gray-800 text-white rounded" style="background-color: {{ \Illuminate\Support\Facades\Auth::user()->bnb->scheme->ctaColor->color_code }};">
             Boeken
         </button>
     </div>

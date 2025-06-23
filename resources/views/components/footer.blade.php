@@ -1,10 +1,13 @@
-<footer class="bg-indigo-900 text-white py-20 px-5">
+<footer class="text-white py-20 px-5"
+        style="background-color: {{ \Illuminate\Support\Facades\Auth::user()->bnb->scheme->footerColor->color_code }}">
     <div class="container mx-auto grid grid-cols-4 gap-8">
         <div>
             <h2 class="text-4xl font-bold">Logo</h2>
             <p class="text-sm mt-2">
             <ul class="mt-5">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur.
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus varius laoreet interdum tempor ornare
+                platea. Mi molestie quam feugiat aptent suspendisse. Diam ac eros augue; amet potenti taciti etiam
+                posuere lorem. Faucibus pretium ac pretium vehicula sodales efficitur.
             </ul>
             </p>
         </div>
