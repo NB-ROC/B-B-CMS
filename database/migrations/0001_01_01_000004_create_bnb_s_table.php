@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('scheme_id')->nullable()->constrained('schemes')->onDelete('cascade');
-            $table->timestamps();
+            $table->timestamps(); //test
         });
     }
 
